@@ -54,5 +54,7 @@ class NavigationTabBarController: UITabBarController {
         tabBar.tintColor = UIColor.highlightColor
         // Cambiar el color de los íconos no seleccionados
         //tabBar.unselectedItemTintColor = UIColor(hex: "#E08700")
+        // Cambia el color del background del TabBar
+        tabBar.barTintColor = UIColor.pizzaCrust
     }
 }

@@ -129,10 +129,11 @@ class PizzeriaLocationViewController: UIViewController {
             pizzariaAddres.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
             pizzariaAddres.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
             
-            animationView.topAnchor.constraint(equalTo: pizzariaAddres.bottomAnchor, constant: 8),
+            //animationView.topAnchor.constraint(equalTo: pizzariaAddres.bottomAnchor, constant: 8),
             animationView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             // MARK: Preguntar por que la linea de abajo si se descomenta "jala" todos los elementos hacia el centro
-            //animationView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            // MARK: update - Era por que como la animmacion no tiene una distancia definida esta "jalando los otros elementos al centro"
+            animationView.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
             animationView.heightAnchor.constraint(equalToConstant: 350),
             animationView.widthAnchor.constraint(equalToConstant: 350),
             
